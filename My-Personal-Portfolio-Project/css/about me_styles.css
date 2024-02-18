@@ -1,0 +1,80 @@
+body {
+  background-color: #112240; /* Replace with your desired color */
+  height: 100vh;
+  margin: 0; /* Remove default margin */
+}
+
+nav {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav a {
+  color: #64ffda; /* Updated text color */
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 12px;
+  transition: all 0.3s ease;
+  border: 2px solid rgb(253, 252, 252);
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+nav a:hover {
+  background-color: rgb(253, 251, 251);
+  color: #64ffda;
+  animation: bounce 0.5s infinite alternate;
+}
+
+.about {
+  text-align: center;
+  color: #64ffda; /* Updated text color */
+  padding: 20px;
+  animation: slideIn 1s ease-in-out;
+}
+
+.about h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.about p:last-child {
+  font-weight: bold;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

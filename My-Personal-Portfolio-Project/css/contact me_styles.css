@@ -1,0 +1,105 @@
+body {
+  background: #112240; /* Replace with your desired color */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  margin: 0; /* Remove default margin */
+}
+
+nav {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav a {
+  color: #64ffda;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  border: 2px solid rgb(253, 252, 252);
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+nav a:hover {
+  background-color: rgb(248, 245, 245);
+  color: #64ffda;
+  animation: bounce 0.5s infinite alternate;
+}
+
+.contact {
+  text-align: center;
+  color: #64ffda;
+  padding: 20px;
+  animation: slideIn 1s ease-in-out;
+}
+
+.contact h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.contact p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.contact p:last-child {
+  font-weight: bold;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+footer {
+  background-color: #233554; /* Background color for the footer */
+  padding: 20px 0; /* Add padding to the footer */
+  position: fixed; /* Fixed position to keep it at the bottom */
+  bottom: 0; /* Position it at the bottom of the viewport */
+  width: 100%; /* Make it full width */
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center; /* Center the icons horizontally */
+}
+
+.social-icon {
+  margin: 0 10px; /* Add some space between the icons */
+}
+
+.social-icon img {
+  width: 50px; /* Adjust the size of the icons */
+  height: auto; /* Maintain aspect ratio */
+}
