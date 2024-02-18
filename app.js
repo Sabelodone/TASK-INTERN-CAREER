@@ -19,7 +19,7 @@ app.post('/contact', (req, res) => {
         service: 'Gmail',
         auth: {
             user: 'sabelozondo825@gmail.com',
-            pass: 'olweth-3'
+            pass: 'Olweth-3'
         }
     });
 
