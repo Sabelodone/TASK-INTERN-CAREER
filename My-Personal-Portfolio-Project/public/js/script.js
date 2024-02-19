@@ -1,5 +1,5 @@
-// Smooth scrolling for anchor links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  // Smooth scrolling for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
 
@@ -19,11 +19,26 @@ const form = document.querySelector('form');
 form.addEventListener('submit', function (e) {
     e.preventDefault();
 
-    // You can add your form submission logic here
-    // For example, you can use Fetch API to send form data to a server
-    // and handle the response accordingly
-    console.log('Form submitted!');
+    const formData = new FormData(this); // 'this' refers to the form element
+
+    fetch('/contact', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return response.text();
+    })
+    .then(data => {
+        alert(data); // Display success message or handle response from the server
+    })
+    .catch(error => {
+        console.error('There was an error!', error);
+    });
 });
+
 
 // Toggle hamburger menu
 function toggleMenu() {
