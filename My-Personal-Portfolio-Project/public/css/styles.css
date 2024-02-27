@@ -1,13 +1,11 @@
 body {
-  background-image: url('/images/DD851DC7-A037-401D-A0E2-BDBF829D5756.PNG');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0; /* Remove default margin */
+    /* Background image */
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.5) 50%, transparent 50%), url('../images/DD851DC7-A037-401D-A0E2-BDBF829D5756.PNG');
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background image */
+    background-attachment: fixed; /* Fixed background attachment */
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default margin */
 }
 
 .header {
