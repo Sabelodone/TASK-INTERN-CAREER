@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <header class="bg-dark text-light">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="#">K1BoGoo</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">Blog Post</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#author">Author</a>
+                    
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="signin-dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Sign In
+                        </a>
+                        
+                        <div class="dropdown-menu" aria-labelledby="signin-dropdown">
+                            <form class="px-4 py-3">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="username" placeholder="Username" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" id="password" placeholder="Password" required>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Sign In</button>
+                            </form>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="signup-dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Sign Up
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="signup-dropdown">
+                            <form class="px-4 py-3">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="new-username" placeholder="Username" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="new-email" placeholder="Email" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" id="new-password" placeholder="Password" required>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Sign Up</button>
+                            </form>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
+    </header>
+    <main>
+        <section id="home" class="container py-5">
+            <h2 class="text-center">Home</h2>
+            <p class="text-center" style="font-size: 3rem; font-weight: bold; animation: pulse 1s infinite;">Welcome to our blog!</p>
+
+        </section>
+        <section id="about" class="container py-5">
+            <h2 class="text-center">About</h2>
+            <p class="text-center"><strong>Welcome to K1BoGoo - Your Ultimate Tech and Gadget Hub!!!!!</strong></p>
+            <p>At K1BooGoo, we're passionate about exploring the latest technologies and gadgets to bring you the most exciting and innovative content in the digital world. Whether you're a tech enthusiast, gadget lover, or simply curious about the latest trends, you've come to the right place.</p>
+            <p>Our platform is dedicated to providing insightful articles, in-depth reviews, and helpful guides on all things tech-related. From smartphones and laptops to wearables and smart home devices, we cover it all. Join us on this journey as we dive into the fascinating realm of technology and discover the endless possibilities it holds.</p>
+            <p>Get ready to dive into a world of innovation, inspiration, and endless exploration. Welcome to K1BooGoo – where technology meets imagination!</p>
+
+        </section>
+        <section id="author" class="container py-5">
+            <h2>Author</h2>
+            
+            <p><strong>Sabelo Sibaya</strong> is an aspiring software engineer with a passion for building innovative solutions and exploring the endless possibilities of technology. With a background in computer science and a keen interest in web development, Sabelo is dedicated to honing his skills and contributing to the ever-evolving tech industry.</p>
+            
+            
+        </section>
+        
+
+        </section>
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <article class="container py-5">
+                        <h2 class="post-title">Apple</h2>
+                        <img src="images/pexels-agung-pandit-wiguna-3401403.jpg" class="img-fluid" alt="...">
+                        <p class="post-content">All about MacBook.</p>
+                        <button class="btn btn-primary read-more">Read More</button>
+                        <div class="full-content" style="display: none;">
+                            <h2>About MacBook</h2>
+<p>MacBook is a line of laptop computers designed and marketed by Apple Inc. It's known for its sleek design, high performance, and integration with other Apple products and services.</p>
+<h3>Models and Specifications</h3>
+<ul>
+  <li>MacBook Air: Known for its thin and lightweight design, ideal for users who prioritize portability.</li>
+  <li>MacBook Pro: Offers higher performance and advanced features such as Retina display, Touch Bar, and powerful processors.</li>
+  <li>Macbook: The standard MacBook line with a balance of performance and portability.</li>
+</ul>
+<h3>Operating System</h3>
+<p>All MacBook models run on macOS, Apple's proprietary operating system. macOS provides a user-friendly interface and seamless integration with other Apple devices through features like Continuity and Handoff.</p>
+<h3>Hardware Features</h3>
+<ul>
+  <li>Retina Display: High-resolution screens that offer vibrant colors and sharp image quality.</li>
+  <li>Touch Bar (MacBook Pro): A touchscreen strip above the keyboard that dynamically changes based on the application being used.</li>
+  <li>Force Touch Trackpad: A pressure-sensitive trackpad that allows for various levels of input depending on the force applied.</li>
+  <li>Thunderbolt and USB-C Ports: MacBook models come equipped with Thunderbolt 3 (USB-C) ports for high-speed data transfer and charging.</li>
+</ul>
+<h3>Performance</h3>
+<p>MacBook models are powered by various Intel or Apple-designed processors, providing excellent performance for a range of tasks from everyday productivity to demanding creative work such as video editing and graphic design.</p>
+<h3>Battery Life</h3>
+<p>MacBook models boast impressive battery life, allowing users to work for extended periods without needing to recharge.</p>
+<h3>Software Ecosystem</h3>
+<p>macOS offers access to a wide range of productivity, creativity, and entertainment software through the Mac App Store. MacBook users also benefit from seamless integration with other Apple devices such as iPhone, iPad, and Apple Watch.</p>
+<h3>Security and Privacy</h3>
+<p>Apple prioritizes security and privacy, with features like FileVault encryption, Gatekeeper, and privacy-focused design principles baked into macOS.</p>
+<h3>Price Range</h3>
+<p>MacBook prices vary depending on the model and configuration, with MacBook Air typically being the most affordable option and MacBook Pro offering higher-end configurations.</p>
+<h3>Support and Warranty</h3>
+<p>Apple provides excellent customer support and offers warranty coverage for MacBook devices, including options for extended coverage through AppleCare+.</p>
+<h3>Environmental Considerations</h3>
+<p>Apple is committed to environmental sustainability, with MacBook models featuring energy-efficient designs, recyclable materials, and reduced carbon footprint.</p>
+                        </div>
+                    </article>
+                </div>
+                <!-- Add more carousel items here -->
+                <div class="carousel-item">
+                    <article class="container py-5">
+                        <h2 class="post-title">Smart Watch</h2>
+                        <!-- Add content for the second post -->
+                        <img src="images/pexels-torsten-dettlaff-437036.jpg" class="img-fluid" alt="...">
+                        <p class="post-content">About Smartwatches</p>
+                        <button class="btn btn-primary read-more">Read More</button>
+                        <div class="full-content" style="display: none;">
+<p>Smartwatches are wearable devices that offer functionalities beyond traditional watches. They often connect to smartphones via Bluetooth and provide features like notifications, fitness tracking, and app integration.</p>
+<h3>Popular Brands and Models</h3>
+<ul>
+  <li>Apple Watch: Known for its integration with iOS devices, extensive health tracking features, and various models catering to different needs.</li>
+  <li>Samsung Galaxy Watch: Offers a range of models with features like fitness tracking, built-in GPS, and rotating bezels for navigation.</li>
+  <li>Fitbit Versa: Focuses on fitness tracking with features like heart rate monitoring, sleep tracking, and guided workouts.</li>
+  <li>Garmin Fenix: Geared towards outdoor enthusiasts with features like GPS tracking, navigation, and advanced performance metrics.</li>
+</ul>
+<h3>Features and Functionalities</h3>
+<ul>
+  <li>Notifications: Smartwatches receive notifications for calls, messages, emails, and app alerts, allowing users to stay connected without checking their phones.</li>
+  <li>Fitness Tracking: Most smartwatches offer fitness tracking features such as step counting, heart rate monitoring, calorie tracking, and workout tracking.</li>
+  <li>GPS and Navigation: Some smartwatches include built-in GPS for tracking outdoor activities like running, hiking, and cycling, as well as navigation features to guide users on their routes.</li>
+  <li>Health Monitoring: Many smartwatches feature sensors for monitoring health metrics such as heart rate, sleep patterns, blood oxygen levels, and stress levels.</li>
+  <li>Apps and Customization: Smartwatches support a variety of apps for productivity, communication, entertainment, and health, and users can customize watch faces and apps to suit their preferences.</li>
+  <li>Voice Control: Smartwatches often feature voice assistants like Siri (Apple), Google Assistant (Wear OS), or Bixby (Samsung), allowing users to perform tasks using voice commands.</li>
+  <li>Water Resistance: Most smartwatches are water-resistant to some extent, making them suitable for wearing during exercise and everyday activities.</li>
+</ul>
+<h3>Compatibility</h3>
+<p>Smartwatches are typically compatible with smartphones running iOS or Android operating systems. Users can pair their smartwatches with their smartphones to access additional features and synchronize data.</p>
+<h3>Battery Life</h3>
+<p>Battery life varies depending on usage and features, with some smartwatches lasting a day or two on a single charge and others lasting several days or even weeks, especially in power-saving modes.</p>
+<h3>Design and Style</h3>
+<p>Smartwatches come in a variety of designs, including round and square faces, different materials for the casing and straps, and customizable watch faces to match personal style preferences.</p>
+<h3>Price Range</h3>
+<p>Smartwatch prices range from budget-friendly options to high-end models with advanced features. Prices vary depending on brand, features, and materials used.</p>
+<h3>Future Trends</h3>
+<p>Future smartwatch developments may include advancements in health monitoring technology, longer battery life, improved performance, and enhanced connectivity with other devices.</p>
+
+                        </div>
+                    </article>
+                </div>
+                <div class="carousel-item">
+                    <article class="container py-5">
+                        <h2 class="post-title">Third Post</h2>
+                        <!-- Add content for the third post -->
+                        <img src="images/pexels-dominika-roseclay-1036808.jpg" class="img-fluid" alt="...">
+                        <p class="post-content">This is the content of my first post.</p>
+                        <button class="btn btn-primary read-more">Read More</button>
+                        <div class="full-content" style="display: none;">
+                            <p>This is the full content of my first post. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non magna efficitur, ultrices libero nec, tempus leo. Donec eget purus sed est efficitur accumsan ut sed arcu. Nullam in augue mauris. Duis commodo magna sit amet orci tristique, nec venenatis odio vehicula.</p>
+                            <p>Nulla facilisi. Aliquam interdum enim sed est rutrum suscipit. Nulla sollicitudin purus et nisi interdum, a lacinia eros volutpat. Quisque malesuada elit a neque congue, vel bibendum risus consequat. Suspendisse vel nibh lorem. In id sapien nec mi sodales dictum vel at turpis. Sed hendrerit a elit id auctor. Vestibulum feugiat tellus ut ultricies elementum.</p>
+                            <p>Integer vestibulum sem eu arcu finibus, id bibendum dolor dignissim. Proin eu nulla massa. Donec sit amet enim eget velit fermentum posuere ac sed orci. In eget magna quis quam hendrerit feugiat. Donec venenatis varius felis, in rutrum ex vehicula at. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam ut malesuada sapien, non dignissim nisi. Morbi in ex nec tortor posuere lacinia.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        
+            </a>
+        </div>
+        <section class="blog-submission container py-5">
+            <h2>Submit Your Blog</h2>
+            <form id="blogForm" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="title">Title:</label>
+                    <input type="text" id="title" name="title" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="author">Writer:</label>
+                    <input type="text" id="author" name="author" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="content">Content:</label>
+                    <textarea id="content" name="content" class="form-control" rows="8" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="image">Image:</label>
+                    <input type="file" id="image" name="image" class="form-control-file">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer class="bg-dark text-light py-3">
+        <div class="container text-center">
+        <h2>Contact Us</h2>
+        <div class="social-links">
+            <a href="https://twitter.com" target="_blank"><img src="icons/twitter.png" alt="Twitter"></a>
+            <a href="https://linkedin.com" target="_blank"><img src="icons/linkedin.png" alt="LinkedIn"></a>
+            <a href="https://github.com" target="_blank"><img src="icons/github.png" alt="GitHub"></a>
+            <a href="tel:+1234567890"><img src="" alt="Phone"></a>
+        </div>
+            <p>&copy; 2024 My Blog</p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

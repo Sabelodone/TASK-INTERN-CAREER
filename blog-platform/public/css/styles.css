@@ -1,0 +1,345 @@
+/* Header */
+header {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #ffffff;
+  }
+  
+  .navbar-brand {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+    position: relative;
+  }
+  
+  nav ul li:last-child {
+    margin-right: 0;
+  }
+  
+  /* Active link styles */
+  nav ul li a.active,
+  nav ul li a:active {
+    color: #ff0000; /* Change the color to the desired color when pressed */
+  }
+  
+  
+  nav ul li a.active {
+    font-weight: bold;
+  }
+  
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: calc(100% + 10px);
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
+    padding: 10px;
+  }
+  
+  .dropdown-content.active {
+    display: block;
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+  
+  .dropdown-content form {
+    padding: 20px;
+  }
+  
+  .dropdown-content input[type="text"],
+  .dropdown-content input[type="email"],
+  .dropdown-content input[type="password"],
+  .dropdown-content button[type="submit"] {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background-color: transparent;
+    transition: border-bottom-color 0.3s;
+  }
+  
+  .dropdown-content input[type="text"]:focus,
+  .dropdown-content input[type="email"]:focus,
+  .dropdown-content input[type="password"]:focus {
+    border-bottom-color: #007bff;
+  }
+  
+  .dropdown-content button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .dropdown-content .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #888;
+  }
+  
+  .dropdown-content .close-btn:hover {
+    color: #555;
+  }
+  
+  /* Blog image */
+  .post img {
+    max-width: 20%;
+    height: 50px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+  }
+  
+  /* Blog submitting form */
+  .blog-submission {
+    margin-top: 50px;
+  }
+  
+  .blog-submission h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  textarea {
+    height: 150px;
+  }
+  
+  button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Error message */
+  .error-message {
+    color: red;
+    margin-top: 5px;
+  }
+  
+  input[type="file"] {
+    border: 2px solid #007bff;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #444444;
+    color: #333;
+    font-size: 16px;
+  }
+  
+  input[type="file"]:focus {
+    outline: none;
+    border-color: #0056b3;
+  }
+  
+  /* Smooth scrolling behavior */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Sections */
+  #home,
+  #about,
+  #blog,
+  #contact {
+    background-image: url('../images/pexels-dominika-roseclay-1036808.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 2px solid #494F56;
+    border-radius: 20px;
+    padding: 50px;
+    text-align: center;
+    height: auto;
+    animation: bounce 1s ease-in-out;
+  }
+  
+  #home {
+    height: 700px;
+  }
+  
+  @keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+  }
+  
+  .pulse-animation {
+    animation: pulse 1s infinite;
+  }
+  
+  #blog {
+    background-color: #6bc1e9;
+    border: 1px solid #000000;
+  }
+  
+  /* Style for the author section */
+  #author {
+    text-align: center;
+  }
+  
+  /* Style for the author name */
+  #author h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Style for the author description */
+  #author p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+  
+  
+  /* Animation */
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+  
+  /* Contact Us Section */
+  footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 50px 20px;
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .social-links img {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .social-links img:hover {
+    transform: scale(0.8);
+  }
+  
+  
+  
+  /* Additional styles for footer text */
+  .footer-text {
+    font-size: 18px;
+  }
+  
+  .footer-text a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .footer-text a:hover {
+    text-decoration: underline;
+  }
+  
+  .navbar {
+    transition: all 0.3s ease;
+  }
+  .navbar.navbar-scroll {
+    background-color: #343a40; /* Change background color on scroll */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Add box shadow on scroll */
+  }
+  /* Style for animated buttons */
+  .btn {
+    transition: all 0.3s ease;
+  }
+  .btn:hover {
+    transform: translateY(-3px); /* Move button 3px up on hover */
+  }
+  /* Style for lightbox gallery */
+  .lightbox img {
+    width: 100%;
+    height: auto;
+  }
+  .lightbox-target {
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.7);
+  }
+  .lightbox-target img {
+    margin: 50px auto;
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+  }
+  .lightbox-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+  }                        
