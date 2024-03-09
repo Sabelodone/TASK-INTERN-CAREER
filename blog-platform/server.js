@@ -186,8 +186,16 @@ app.put('/posts/:postId', authMiddleware, async (req, res) => {
   try {
     const postId = req.params.postId;
     const { title, content } = req.body;
-    await Post.findByIdAndUpdate(postId, { title, content });
-    res.status(200).json({ message: 'Post updated successfully' });
+    // Update the post in the database
+    const sql = 'UPDATE blog_posts SET title = ?, content = ? WHERE id = ?';
+    db.query(sql, [title, content, postId], (err, result) => {
+      if (err) {
+        console.error('Error updating post:', err);
+        return res.status(500).json({ error: 'An error occurred while updating post' });
+      }
+      console.log('Post updated successfully');
+      res.status(200).json({ message: 'Post updated successfully' });
+    });
   } catch (error) {
     console.error('Error updating post:', error);
     res.status(500).json({ error: 'An error occurred while updating post' });
@@ -198,13 +206,22 @@ app.put('/posts/:postId', authMiddleware, async (req, res) => {
 app.delete('/posts/:postId', authMiddleware, async (req, res) => {
   try {
     const postId = req.params.postId;
-    await Post.findByIdAndDelete(postId);
-    res.status(200).json({ message: 'Post deleted successfully' });
+    // Delete the post from the database
+    const sql = 'DELETE FROM blog_posts WHERE id = ?';
+    db.query(sql, [postId], (err, result) => {
+      if (err) {
+        console.error('Error deleting post:', err);
+        return res.status(500).json({ error: 'An error occurred while deleting post' });
+      }
+      console.log('Post deleted successfully');
+      res.status(200).json({ message: 'Post deleted successfully' });
+    });
   } catch (error) {
     console.error('Error deleting post:', error);
     res.status(500).json({ error: 'An error occurred while deleting post' });
   }
 });
+
 
 
 // Start the server
